@@ -1,0 +1,107 @@
+<section id="title">미생물</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>당신은 미생물을 연구하는 연구원이다. 어느날, 당신은 엄청난 번식력을 가진 <b>미생물 A</b>를 발견하였다. 당신은 <b>미생물 A</b>의 번식 과정을 관찰하여 다음과 같이 분석하였다.</p>
+		<ul>
+			<li>$0$일째에는 <b>미생물 A</b> $n$마리가 있다. 이 미생물들의 나이는 $1$살이다.</li>
+
+			<li>하루가 지날 때마다, 전날 있었던 <b>미생물 A</b>들은 세포 분열을 통해 나이가 $1$살인 <b>미생물 A</b>을 자기 나이만큼 생성하고, 나이를 한 살 더 먹는다.(이 과정을 <b>번식</b>이라 한다) 예를 들어, 레벨이 $i$인 <b>미생물 A</b>는
+				하루가 지나면 $1$살인 <b>미생물 A</b> $i$마리를 생성하고, $i+1$살이 된다. (따라서 그 다음 날에는 $i+1$마리를 생성할 것이다.)</li>
+
+			<li>방금 생성된 <b>미생물 A</b>는 생성된 다음 날부터 <b>번식</b>을 시작한다.</li>
+
+		</ul>
+		<p> 관찰 $k$일째에 몇 마리의 <b>미생물 A</b>가 있을지를 계산해 보자.</p>
+
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>문제에 언급된 두 정수 $n$과 $k$가 주어진다. ($1\le n\le 1000$, $1\le k\le 10^5$)</p>
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>문제의 정답을 $10^9 + 7$로 나눈 나머지를 출력한다.</p>
+	</div>
+</section>
+<section id="hint">
+	<div class="headline">
+		<h2>노트</h2>
+	</div>
+	<div id="problem_hint" class="problem-text">
+		<p>예제 설명:</p>
+		<table class="table table-bordered table-center-70">
+			<tbody>
+				<tr>
+					<th>날짜</th>
+
+					<th>나이가 $1$살인 <b>미생물 A</b></th>
+
+					<th>나이가 $2$살인 <b>미생물 A</b></th>
+
+					<th>나이가 $3$살인 <b>미생물 A</b></th>
+
+					<th><b>미생물 A</b>의 총 마리수</th>
+
+				</tr>
+
+				<tr>
+
+					<td>$0$</td>
+
+					<td>$3$</td>
+
+					<td>$0$</td>
+
+					<td>$0$</td>
+
+					<td>$3$</td>
+
+				</tr>
+
+				<tr>
+
+					<td>$1$</td>
+
+					<td>$3$</td>
+
+					<td>$3$</td>
+
+					<td>$0$</td>
+
+					<td>$2 \times 3$</td>
+
+				</tr>
+
+				<tr>
+
+					<td>$2$</td>
+
+					<td>$2 \times 3 + 3$</td>
+
+					<td>$3$</td>
+
+					<td>$3$</td>
+
+					<td>$5 \times 3$</td>
+
+				</tr>
+
+			</tbody>
+
+		</table>
+
+
+	</div>
+</section>
